@@ -1,0 +1,95 @@
+
+//
+// Photo list
+//
+.photo-list {
+  list-style: none;
+  margin: 0 -8px;
+  padding: 0;
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  li {
+    float: left;
+    width: 25%;
+    padding: 8px;
+    opacity: .8;
+    transition: opacity .3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &.cols-1 li { width: 100%; }
+  &.cols-2 li { width: 50%; }
+  &.cols-3 li { width: 33.333333%; }
+  &.cols-4 li { width: 25%; }
+  &.cols-5 li { width: 20%; }
+  &.cols-6 li { width: 16.666666%; }
+
+}
+
+
+//
+// Image gallery
+//
+.image-gallery img {
+  cursor: zoom-in;
+}
+
+.lg-backdrop {
+  z-index: 1050;
+}
+
+.lg-outer {
+  z-index: 1051;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+
+  opacity: .7;
+  transition: opacity .3s ease-out;
+
+  &.active,
+  &:hover {
+    border-radius: 0;
+    opacity: 1;
+  }
+}
+
+.lSSlideOuter .lSPager.lSpg > li {
+
+  a {
+    background-color: $color-gray-lighter;
+  }
+
+  &.active a,
+  &:hover a {
+    background-color: $color-brand;
+  }
+  
+}
+
+
+
+
+//
+// Lity
+//
+img[data-lity] {
+  cursor: zoom-in;
+}
+
+.lity {
+  z-index: 999;
+}

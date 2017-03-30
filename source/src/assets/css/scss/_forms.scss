@@ -1,0 +1,334 @@
+
+label {
+  font-weight: 600;
+  font-size: 13px;
+  color: $color-gray-light;
+}
+
+.form-control {
+  //color: #76838f;
+  background-color: #fff;
+  border-radius: 0;
+  border-color: $color-border-input;
+  box-shadow: none;
+  transition: border-color .2s linear, background-color .2s linear;
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: darken($color-border-input, 10%);
+    background-color: $color-bg;
+  }
+}
+
+.help-block {
+  color: lighten($color-gray-light, 20%);
+}
+
+.input-group-addon {
+  border-color: $color-border-input;
+  background-color: $color-gray-lightest;
+}
+
+.input-group .form-control {
+  &:focus,
+  &.focus {
+    border-color: $color-border-input;
+  }
+}
+
+select.form-control {
+  &:focus,
+  &.focus {
+    background-color: #fff;
+  }
+}
+
+.input-lg {
+  font-size: 15px;
+}
+
+form .text-muted {
+  margin-bottom: 0;
+}
+
+.icheck {
+  padding-left: 0 !important;
+}
+
+//
+// Header form
+//
+.header-form-wrapper {
+  position: relative;
+}
+
+.header-form {
+  padding: 50px 30px;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,.2);
+  transform: scale(0);
+  transition: .5s ease-in-out;
+
+  hr {
+    border-top-color: #fff;
+    opacity: .1;
+    margin-bottom: 30px;
+  }
+
+  &.visible {
+    transform: scale(1);
+    transition: .5s ease-in-out .5s;
+  }
+
+  &.form-second {
+    position: absolute;
+    top: 0;
+  }
+
+  .form-control {
+    background-color: rgba(255,255,255,.95);
+    border: 0;
+  }
+
+  p a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  small {
+    color: #fff;
+  }
+}
+
+//
+// Bootstrap select
+//
+.bootstrap-select {
+
+  .btn {
+    background-color: #fff !important;
+    color: $color-text;
+    height: 34px;
+    padding-left: 12px;
+    border-radius: 0;
+    box-shadow: none !important;
+
+    &:hover,
+    &:focus {
+      border-color: $color-brand;
+    }
+
+    .filter-option {
+      line-height: 32px;
+    }
+  }
+
+  .dropdown-toggle:focus {
+    outline: none !important;
+  }
+
+  &.btn-group.open .dropdown-toggle {
+    border-color: $color-brand;
+  }
+
+  .dropdown-menu {
+    padding: 8px;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.15);
+
+    li > a {
+      line-height: 34px;
+      padding: 0 20px;
+      white-space: nowrap;
+      display: block;
+      border-radius: 4px;
+      border-bottom: 1px solid #f8f9fa;
+      color: $color-hr;
+      transition: color .2s linear;
+
+      &:hover,
+      &:focus {
+        background-color: $color-gray-lightest;
+        color: $color-brand;
+        outline: none;
+      }
+    }
+
+    li:last-child > a {
+      border-bottom: 0;
+    }
+  }
+
+}
+
+
+
+//
+// Star rating
+//
+.star-rating {
+
+  display: inline-block;
+
+  input {
+    display: none;
+  }
+
+  label {
+    color: $color-star-empty; 
+    float: right;
+
+    &::before {
+      margin: 2px;
+      font-size: 1.25em;
+      font-family: FontAwesome;
+      display: inline-block;
+      content: "\f005";
+    }
+
+  }
+
+  & > input:checked ~ label,
+  &:not(:checked) > label:hover,
+  &:not(:checked) > label:hover ~ label { color: $color-star-full; }
+}
+
+.rate {
+
+  display: inline-block;
+
+  .fa {
+    color: $color-star-full;
+  }
+
+  .fa.empty {
+    color: $color-star-empty;
+  }
+
+  .fa-star-half {
+    position: relative;
+    width: 13px;
+    text-align: left;
+
+    &::before {
+      z-index: 1;
+      position: relative;
+    }
+
+    &::after {
+      content: "\f005";
+      color: $color-star-empty;
+      position: absolute;
+      left: 0;
+    }
+
+  }
+
+  &.rate-lg {
+    font-size: 20px;
+
+    .fa-star-half {
+      width: 20px;
+    }
+  }
+
+}
+
+//
+// JS Switch checkbox
+//
+.checkbox-switch {
+
+  margin-bottom: 25px;
+
+  label {
+    padding-left: 0;
+    line-height: 22px;
+    font-size: 15px;
+  }
+
+  .switchery {
+    margin-right: 10px;
+    margin-top: -5px;
+  }
+  
+}
+
+//
+// Dropify
+//
+.dropify-wrapper {
+  border: 1px solid $color-border;
+  padding: 15px;
+}
+
+.dropify-filename {
+  visibility: hidden;
+}
+
+.dropify-wrapper.touch-fallback .dropify-clear {
+  border: 1px solid $color-red;
+  color: $color-red;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  bottom: 15px;
+
+  &:hover {
+    color: #fff;
+    background-color: $color-red;
+  }
+}
+
+.dropify-wrapper.touch-fallback .dropify-preview .dropify-infos .dropify-infos-inner p {
+  color: $color-gray-light;
+  font-weight: 400;
+}
+
+//
+// Dropzone
+//
+.dropzone {
+  border: 3px dashed $color-border;
+  background-color: $color-bg;
+  padding: 15px;
+
+  .dz-message {
+    margin: 28px 0 38px;
+  }
+}
+
+.dropzone-file-icon {
+  font-size: 50px;
+  color: #ccc;
+  display: block;
+
+  &::before {
+    content: '\e800';
+    font-family: dropify;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+  }
+}
+
+
+// Media queries
+@include media-down(phone) {
+
+  .input-group {
+    margin-bottom: 10px;
+  }
+
+}

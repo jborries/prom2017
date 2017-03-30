@@ -1,0 +1,36 @@
+/*
+ * TheShots v1.0.0 (http://shamsoft.net/theshots)
+ * Copyright 2016 ShaMSofT
+ * Licensed under the Themeforest Standard Licenses
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Core CSS
+@import "typography";
+@import "content";
+@import "sections";
+@import "navbar";
+@import "header";
+@import "footer";
+@import "buttons";
+@import "forms";
+
+// Components
+@import "faq";
+@import "tag";
+@import "cards";
+@import "shot";
+@import "media";
+@import "user";
+@import "counter";
+@import "socials";
+@import "comment";
+@import "features";
+@import "pagination";
+@import "page-links";
+
+// Others
+@import "utilities";

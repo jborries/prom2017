@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="theshots is a directory listing template.">
+    <meta name="keywords" content="">
+
+    <title>TheShots</title>
+
+    <!-- Styles -->
+    <link href="assets/css/app.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="assets/img/favicon.ico">
+  </head>
+
+  <body class="sticky-nav">
+
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <div class="container">
+
+        <!-- Logo and navigation links -->
+        <div class="pull-left">
+          <a class="navbar-toggle" href="#" data-toggle="offcanvas"><i class="ti-menu"></i></a>
+
+          <div class="logo">
+            <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+          </div>
+
+          <ul class="nav-menu">
+            <li>
+              <a class="active" href="index.html">Home</a>
+              <ul>
+                <li><a class="active" href="index.html">Version 1</a></li>
+                <li><a href="index2.html">Version 2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Explore</a>
+              <ul>
+                <li><a href="explore-style1.html">Style 1</a></li>
+                <li><a href="explore-style2.html">Style 2</a></li>
+                <li><a href="explore-style3-cols4.html">Style 3 - Cols 4</a></li>
+                <li><a href="explore-style3-cols3.html">Style 3 - Cols 3</a></li>
+                <li><a href="explore-style3-cols2.html">Style 3 - Cols 2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Pages</a>
+              <ul>
+                <li><a href="shot-add.html">Add Shot</a></li>
+                <li><a href="shot.html">Shot - Image</a></li>
+                <li><a href="shot-gallery.html">Shot - Gallery</a></li>
+                <li><a href="page-about.html">About</a></li>
+                <li><a href="page-contact.html">Contact</a></li>
+                <li><a href="page-faq.html">FAQ</a></li>
+                <li><a href="page-search.html">Search</a></li>
+                <li><a href="page-typography.html">Typography</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">User account</a>
+              <ul>
+                <li><a href="user-profile.html">Profile</a></li>
+                <li><a href="user-followers.html">Followers - 1</a></li>
+                <li><a href="user-followers-2.html">Followers - 2</a></li>
+                <li><a href="setting-profile.html">Settings</a></li>
+                <li><a href="user-login.html">Login</a></li>
+                <li><a href="user-register.html">Register</a></li>
+                <li><a href="user-forget-pass.html">Forget pass</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">More</a>
+              <ul>
+                <li><a href="http://themeforest.net/item/theshots-responsive-image-listing-template/14799485?ref=shamsoft"><strong>Buy now</strong></a></li>
+                <li><a href="http://shamsoft.net/theshots/doc">Documentation</a></li>
+                <li><a href="http://themeforest.net/item/theshots-responsive-image-listing-template/14799485/comments">Buy now</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- END Logo and navigation links -->
+
+        <!-- User account and action buttons -->
+        <div class="pull-right">
+          <a class="btn-navbar search-opener" href="#"><i class="ti-search"></i></a>
+          <a class="btn-navbar" href="shot-add.html"><i class="ti-plus"></i></a>
+
+          <div class="dropdown user-account">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+              <img src="assets/img/avatar-2.jpg" alt="avatar">
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="user-profile.html">Profile</a></li>
+              <li><a href="setting-profile.html">Settings</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- END User account and action buttons -->
+
+        <!-- Search screen -->
+        <div class="search-screen closed">
+          <button class="search-closer"><i class="ti-close"></i></button>
+          <form class="search-form" action="page-search.html">
+            <input type="text" autocomplete="off" placeholder="Type to search...">
+          </form>
+        </div>
+        <!-- END Search screen -->
+
+      </div>
+    </nav>
+    <!-- END Navigation bar -->
+
+
+    <!-- Site header -->
+    <header class="site-header color-alt overlay-black bg-fixed" style="background-image: url(assets/img/bg-header.jpg)">
+      <div class="container">
+        <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+          <h1><font color="red"><strong>CliqFlix</strong></font></h1>
+          <h4>We make it <strong>easy</strong> to find the movies and shows you'll love!</h4>
+          <br>
+          <p class="hidden-xs">Stop searching forever to find something worth watching. Tap into your own network and prepare to CliqFlix and Chill...</p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 header-form-wrapper">
+          <form class="header-form visible">
+            <div class="form-group">
+              <input class="form-control input-lg" type="text" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+             <input class="form-control input-lg" type="text" placeholder="Email address">
+            </div>
+            
+            <div class="form-group">
+              <input class="form-control input-lg" type="password" placeholder="Password">
+            </div>
+            
+            <p class="small text-muted">You're accepting our <a href="#">terms and conditions</a> by clicking on register button.</p>
+            <br>
+            
+            <div class="row">
+              <div class="col-xs-6">
+                <button class="btn btn-primary btn-block" type="submit">Register</button>
+              </div>
+              <div class="col-xs-6">
+                <a class="btn btn-link toggle-form-visibility" href="#">or LOGIN</a>
+              </div>
+            </div>
+          </form>
+
+          <form class="header-form form-second">
+            <div class="form-group">
+              <input class="form-control input-lg" type="text" placeholder="Username">
+            </div>
+            
+            <div class="form-group">
+              <input class="form-control input-lg" type="password" placeholder="Password">
+            </div>
+
+            <p><a href="user-forget-pass.html">Forgot your password?</a></p>
+
+            <div class="row">
+              <div class="col-xs-6">
+                <button class="btn btn-primary btn-block" type="submit">Login</button>
+              </div>
+              <div class="col-xs-6">
+                <a class="btn btn-link toggle-form-visibility" href="#">or Register</a>
+              </div>
+            </div>
+            
+            <hr>
+
+            <h6 class="text-uppercase no-margin-top text-center"><small>Login with</small></h6>
+            <div class="row">
+              <div class="col-xs-4">
+                <a class="btn btn-facebook btn-sm btn-block" href="#"><i class="fa fa-facebook"></i></a>
+              </div>
+
+              <div class="col-xs-4">
+                <a class="btn btn-twitter btn-sm btn-block" href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+
+              <div class="col-xs-4">
+                <a class="btn btn-google btn-sm btn-block" href="#"><i class="fa fa-google"></i></a>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </header>
+    <!-- END Site header -->
+
+
+    <!-- Main container -->
+    <main>
+
+
+
+      <!-- Staff pick -->
+      <section>
+        <div class="container">
+          <header class="section-header">
+            <span>Featured</span>
+            <h2>Picks By Fellow CliqFlixers</h2>
+            <p>Check out some of the popular selections by the community</p>
+          </header>
+
+          <div class="row">
+
+            <!-- Shot -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="shot shot-small">
+                <div class="shot-preview">
+                  <a class="img" href="shot-gallery.html"><img src="assets/img/shot-3.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- END Shot -->
+
+            <!-- Shot -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="shot shot-small">
+                <div class="shot-preview">
+                  <a class="img" href="shot-gallery.html"><img src="assets/img/shot-4.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- END Shot -->
+
+            <!-- Shot -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="shot shot-small">
+                <div class="shot-preview">
+                  <a class="img" href="shot-gallery.html"><img src="assets/img/shot-2.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- END Shot -->
+
+            <!-- Shot -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="shot shot-small">
+                <div class="shot-preview">
+                  <a class="img" href="shot-gallery.html"><img src="assets/img/shot-5.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- END Shot -->
+
+            <!-- Shot -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="shot shot-small">
+                <div class="shot-preview">
+                  <a class="img" href="shot-gallery.html"><img src="assets/img/shot-9.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- END Shot -->
+
+            <!-- Shot -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="shot shot-small">
+                <div class="shot-preview">
+                  <a class="img" href="shot-gallery.html"><img src="assets/img/shot-6.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <!-- END Shot -->
+
+            <div class="col-xs-12 col-sm-4 col-md-offset-4">
+              <br><br>
+              <a class="btn btn-primary btn-block" href="explore-style3-cols3.html">See all</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- END Staff pick -->
+
+
+      <!-- Features -->
+      <section class="bg-white">
+        <div class="container">
+
+          <header class="section-header">
+            <span>features</span>
+            <h2>What we offer</h2>
+            <p>Finally...a place where you can find all the shows and movies your friends are watching</p>
+          </header>
+          
+
+          <ul class="features">
+            <li>
+              <div class="icon"><i class="fa fa-globe"></i></div>
+              <h5>Huge Visitors</h5>
+              <p class="text-justify">Quisque ornare hendrerit risus, lectus accumsan suspendisse non ultrices urna aenean leo dictum, lobortis sollicitudin lorem.</p>
+            </li>
+
+            <li>
+              <div class="icon"><i class="fa fa-search"></i></div>
+              <h5>SEO Friendly</h5>
+              <p class="text-justify">Quisque ornare hendrerit risus, lectus accumsan suspendisse non ultrices urna aenean leo dictum, lobortis sollicitudin lorem.</p>
+            </li>
+
+            <li>
+              <div class="icon"><i class="fa fa-newspaper-o"></i></div>
+              <h5>We Advertise</h5>
+              <p class="text-justify">Quisque ornare hendrerit risus, lectus accumsan suspendisse non ultrices urna aenean leo dictum, lobortis sollicitudin lorem.</p>
+            </li>
+
+            <li>
+              <div class="icon"><i class="fa fa-user"></i></div>
+              <h5>Get followers</h5>
+              <p class="text-justify">Quisque ornare hendrerit risus, lectus accumsan suspendisse non ultrices urna aenean leo dictum, lobortis sollicitudin lorem.</p>
+            </li>
+
+            <li>
+              <div class="icon"><i class="fa fa-th"></i></div>
+              <h5>Portfolio page</h5>
+              <p class="text-justify">Quisque ornare hendrerit risus, lectus accumsan suspendisse non ultrices urna aenean leo dictum, lobortis sollicitudin lorem.</p>
+            </li>
+
+            <li>
+              <div class="icon"><i class="fa fa-heart"></i></div>
+              <h5>See likes</h5>
+              <p class="text-justify">Quisque ornare hendrerit risus, lectus accumsan suspendisse non ultrices urna aenean leo dictum, lobortis sollicitudin lorem.</p>
+            </li>
+          </ul>
+
+
+        </div>
+      </section>
+      <!-- END Features -->
+
+
+      <!-- How it works -->
+      <section>
+        <div class="container">
+
+          <div class="col-sm-12 col-md-6">
+            <header class="section-header text-left">
+              <span>Workflow</span>
+              <h3>How it works</h3>
+              <p></p>
+            </header>
+
+            <p>Nulla quis felis et orci luctus semper sit amet id dui. Aenean ultricies lectus nunc, vel rhoncus odio sagittis eu. Sed at felis eu tortor mattis imperdiet et sed tortor. Nullam ac porttitor arcu. Vivamus tristique elit id tempor lacinia. Donec auctor at nibh eget tincidunt. Nulla facilisi. Nunc condimentum dictum mattis.</p>
+            <p>Pellentesque et pulvinar orci. Suspendisse sed euismod purus. Pellentesque nunc ex, ultrices eu enim non, consectetur interdum nisl. Nam congue interdum mauris, sed ultrices augue lacinia in. Praesent turpis purus, faucibus in tempor vel, dictum ac eros. Maecenas imperdiet purus ac malesuada vulputate. In quis ultricies leo. Donec ipsum neque, cursus id consequat vitae, molestie in purus.</p>
+            
+            <br><br>
+            <a class="btn btn-primary" href="page-typography.html">Learn more</a>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <img class="center-block" src="assets/img/how-it-works.png" alt="how it works">
+          </div>
+
+        </div>
+      </section>
+      <!-- END How it works -->
+
+
+
+      <!-- Facts -->
+      <section class="no-border-bottom overlay-black" style="background-image: url(assets/img/bg-facts.jpg)">
+        <div class="container">
+
+          <div class="row">
+            <div class="counter color-alt col-md-3 col-sm-6">
+              <i class="fa fa-camera"></i>
+              <p><span data-from="0" data-to="6890"></span>+</p>
+              <h6>Shots</h6>
+            </div>
+
+            <div class="counter color-alt col-md-3 col-sm-6">
+              <i class="fa fa-user"></i>
+              <p><span data-from="0" data-to="1200"></span>+</p>
+              <h6>Members</h6>
+            </div>
+
+            <div class="counter color-alt col-md-3 col-sm-6">
+              <i class="fa fa-heart"></i>
+              <p><span data-from="0" data-to="36800"></span>+</p>
+              <h6>Likes</h6>
+            </div>
+
+            <div class="counter color-alt col-md-3 col-sm-6">
+              <i class="fa fa-comment"></i>
+              <p><span data-from="0" data-to="15400"></span>+</p>
+              <h6>Comments</h6>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- END Facts -->
+
+
+
+    </main>
+    <!-- END Main container -->
+
+
+    <!-- Site footer -->
+    <footer class="site-footer no-margin-top">
+
+      <!-- Top section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <h6>About</h6>
+            <p class="text-justify"><strong>TheShots</strong> is a powerful, responsive, and high-performance image listing template. It's based on Bootstrap and contains a lot of components to easily make an image listing website. This template comes with a simple yet beautiful design which focused on ease of use for users. Take a tour in the website and check our intensive <a href="http://shamsoft.net/theshots/docs" target="_blank">online documentation</a> before make a purchuse!</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <h6>Company</h6>
+            <ul class="footer-links">
+              <li><a href="page-about.html">About us</a></li>
+              <li><a href="page-typography.html">How it works</a></li>
+              <li><a href="page-typography.html">Terms of use</a></li>
+              <li><a href="page-typography.html">Privacy policy</a></li>
+              <li><a href="page-contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-2">
+            <h6>Support</h6>
+            <ul class="footer-links">
+              <li><a href="page-faq.html">Help center</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Forums</a></li>
+              <li><a href="#">Official blog</a></li>
+              <li><a href="#">Ask question</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <h6>Newsletter</h6>
+            <p><strong>Subscribe</strong> to our newsletter to receive news, updates, and special offers:</p>
+            <br>
+            <input type="text" class="form-control" placeholder="Enter your email address">
+            <button class="btn btn-primary btn-sm btn-block" type="button"><i class="fa fa-paper-plane"></i> Subscribe</button>
+          </div>
+        </div>
+
+        <hr>
+      </div>
+      <!-- END Top section -->
+
+      <!-- Bottom section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyrights &copy; 2017 All Rights Reserved by CliqFlix LLC</a>.</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END Bottom section -->
+
+    </footer>
+    <!-- END Site footer -->
+
+
+    <!-- Back to top button -->
+    <a id="scroll-up" href="#"><i class="ti-angle-up"></i></a>
+    <!-- END Back to top button -->
+
+    <!-- Shot description modal -->
+    <div id="shot-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg" role="document">
+        <a class="close-modal" data-dismiss="modal" href="#"><i class="ti-close"></i></a>
+        <div class="modal-content"></div>
+      </div>
+    </div>
+    <!-- END Shot description modal -->
+
+
+    <!-- Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+  </body>
+</html>
