@@ -2,3 +2,7 @@
 max-height: 400px;
 max-width: 100%;
 }
+
+.section-background {
+    background-color: grey;
+}
