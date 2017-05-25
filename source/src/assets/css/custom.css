@@ -6,3 +6,9 @@ max-width: 100%;
 .section-background {
     background-color: grey;
 }
+
+@media only screen and (max-width: 767px) {
+	/* Headings for mobile View */
+	.img-responsive{
+		padding-top: 50%;
+	}
