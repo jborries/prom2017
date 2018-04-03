@@ -7,8 +7,21 @@ max-width: 100%;
     background-color: grey;
 }
 
-@media only screen and (max-width: 767px) {
-	/* Headings for mobile View */
+@media only screen and (max-width: 480px) {
+	/* Headings for mobile View
 	.img-responsive{
 		padding-top: 50%;
 	}
+    */
+}
+
+#header-bg{
+    background-image: url("../../assets/img/2017pics/2017 FW tacky prom-119.jpg");
+}
+
+#header-bg-phone{
+    background-image: url("../../assets/img/2017pics/2017 FW tacky prom-119.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
